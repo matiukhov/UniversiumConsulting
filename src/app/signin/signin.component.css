@@ -1,0 +1,83 @@
+:host {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.signin-container {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(112, 24, 112));
+    padding: 4rem;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 20px 200px -50px black;
+
+}
+
+.signin-logo,
+.signin-header {
+    margin-bottom: 2rem;
+}
+
+.signin-logo img {
+    height: 50px;
+}
+
+.signin-logo,
+.signin-header {
+    text-align: center;
+}
+
+.signin-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5 rem;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.signin-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signin-item input[type="text"],
+.signin-item input[type="password"] {
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255, .2);
+    padding: 1rem;
+    flex: 1 1 auto;
+    border-radius: 25px;
+    transition: background .5s;
+}
+
+.signin-item input:focus {
+    background: white;
+}
+
+.signin-item input.ng-invalid.ng-touched {
+    background: rgb(255, 0, 0, 0.3);
+}
+
+.signin-form button {
+    background: rgba(159, 42, 159, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 0px;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.signin-form button:hover {
+    background: rgb(159, 42, 159);
+}
+
+.signin-form button:disabled {
+    background: rgb(95, 95, 95, 0.3);
+}

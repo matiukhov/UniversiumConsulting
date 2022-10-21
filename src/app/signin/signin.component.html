@@ -1,0 +1,22 @@
+<div class="signin-container">
+  <div class="signin-logo">
+    <img
+      src="//images.squarespace-cdn.com/content/v1/62af5a4f17b47f1111a5261c/95057b43-32cf-45bd-95b9-b4b9b99e2c00/Group+8.png?format=1500w"
+      alt="logo">
+  </div>
+  <div class="signin-header">
+    <h1>Sign In</h1>
+    <div>Please login</div>
+  </div>
+  <form [formGroup]="form" class="signin-form" (submit)="signin()">
+    <div class="signin-item">
+      <mat-icon>person_outline</mat-icon>
+      <input type="text" placeholder="Enter login" formControlName="login" />
+    </div>
+    <div class="signin-item">
+      <mat-icon>lock</mat-icon>
+      <input type="password" placeholder="Enter password" formControlName="password" />
+    </div>
+    <button [disabled]="form.invalid">SIGN IN</button>
+  </form>
+</div>

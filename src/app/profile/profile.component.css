@@ -1,0 +1,62 @@
+:host {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(33, 33, 33);
+    padding: 2rem;
+    min-width: 400px;
+    border-radius: 10px;
+    margin: 2rem;
+    color: rgb(255, 255, 255, .7);
+    box-shadow: 0px 20px 200px -50px black;
+}
+
+.profile-name {
+    font-style: italic;
+    text-align: center;
+}
+
+.profile-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-item mat-icon, 
+.profile-brands{
+    color:rgb(226, 41, 226);
+}
+
+.profile-item a,
+.profile-brands a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, .7);
+}
+
+.profile-brands a {
+    transition: transform .2s;
+}
+
+
+.profile-item a:hover,
+.profile-brands a:hover {
+    text-decoration: underline;
+}
+
+.profile-brands {
+    padding-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.profile-brands a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+}
